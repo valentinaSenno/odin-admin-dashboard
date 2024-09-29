@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    height: 100vh;
+    
 }
 
 .sidebar {
@@ -57,6 +57,8 @@ body {
     grid-template-rows: 1fr 2fr;
     padding: 20px 40px 20px 20px;
     row-gap: 15px;
+    box-shadow: 6px 0px 6px 4px rgba(0, 0, 0, 0.3); 
+    z-index: 1;
 }
 
 .search-row img {
@@ -136,6 +138,85 @@ button {
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 6;
+    display: grid;
+    grid-template-columns: repeat(4) 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    column-gap: 15px;
+}
+
+.projects {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.projects img {
+    height: 15px;
 }
 
 
+.main-right {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.announ-card, .trending-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+}
+
+.trending-card {
+    grid-template-columns: 1fr 3fr;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.trend-item {
+    padding-top: 15px;
+}
+
+.main h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    padding-left: 40px;
+}
+
+.card::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 5px; 
+    height: 100%; 
+    background-color: #fbbf24;
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.card-icons {
+    text-align: right;
+}
