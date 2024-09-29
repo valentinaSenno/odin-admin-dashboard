@@ -18,6 +18,8 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 6;
+    color: white;
+    padding: 25px;
 }
 
 .top {
@@ -34,4 +36,28 @@ body {
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 6;
+}
+
+.title, .main-nav, .bottom-nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.dash-logo {
+    height: 2.5em;
+}
+
+.sidebar img {
+    filter: brightness(0) invert(1);
+}
+
+.main-nav img, .bottom-nav img {
+    height: 1.5em;
+}
+
+.main-nav, .bottom-nav {
+    padding-top: 40px;
+    row-gap: 13px;
 }
